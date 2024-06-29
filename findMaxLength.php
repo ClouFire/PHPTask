@@ -17,5 +17,8 @@ function findMaxLength( $list) {
             } $newCounter = 1;
         }
     }
-    return $oldCounter;
+
+    return ($oldCounter > $newCounter) ? $oldCounter : $newCounter;
 }
+
+print(findMaxLength([1,1,1,1,2,3,4,5,6]));
